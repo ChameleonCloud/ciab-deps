@@ -1,0 +1,57 @@
+[submodule "blazar"]
+	path = blazar
+	url = https://github.com/ChameleonCloud/blazar.git
+[submodule "cyborg"]
+	path = cyborg
+	url = https://github.com/ChameleonCloud/cyborg.git
+[submodule "gnocchi"]
+	path = gnocchi
+	url = https://github.com/gnocchixyz/gnocchi.git
+[submodule "heat"]
+	path = heat
+	url = https://github.com/ChameleonCloud/heat.git
+[submodule "horizon-theme"]
+	path = horizon-theme
+	url = https://github.com/ChameleonCloud/horizon-theme.git
+[submodule "horizon"]
+	path = horizon
+	url = https://github.com/ChameleonCloud/horizon.git
+[submodule "blazar-dashboard"]
+	path = blazar-dashboard
+	url = https://github.com/ChameleonCloud/blazar-dashboard.git
+[submodule "heat-dashboard"]
+	path = heat-dashboard
+	url = https://github.com/ChameleonCloud/heat-dashboard.git
+[submodule "zun-ui"]
+	path = zun-ui
+	url = https://github.com/ChameleonCloud/zun-ui.git
+[submodule "ironic"]
+	path = ironic
+	url = https://github.com/ChameleonCloud/ironic.git
+[submodule "keystone"]
+	path = keystone
+	url = https://github.com/ChameleonCloud/keystone.git
+[submodule "neutron"]
+	path = neutron
+	url = https://github.com/ChameleonCloud/neutron.git
+[submodule "networking-generic-switch"]
+	path = networking-generic-switch
+	url = https://github.com/ChameleonCloud/networking-generic-switch.git
+[submodule "networking-wireguard"]
+	path = networking-wireguard
+	url = https://github.com/ChameleonCloud/networking-wireguard.git
+[submodule "nova"]
+	path = nova
+	url = https://github.com/ChameleonCloud/nova.git
+[submodule "blazar-nova"]
+	path = blazar-nova
+	url = https://github.com/ChameleonCloud/blazar-nova.git
+[submodule "zun"]
+	path = zun
+	url = https://github.com/ChameleonCloud/zun.git
+[submodule "doni"]
+	path = doni
+	url = https://github.com/ChameleonCloud/doni.git
+[submodule "tunelo"]
+	path = tunelo
+	url = https://github.com/ChameleonCloud/tunelo.git

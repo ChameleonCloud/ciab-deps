@@ -55,3 +55,9 @@
 [submodule "tunelo"]
 	path = tunelo
 	url = https://github.com/ChameleonCloud/tunelo.git
+[submodule "kolla"]
+	path = kolla
+	url = https://github.com/ChameleonCloud/kolla.git
+[submodule "kolla-ansible"]
+	path = kolla-ansible
+	url = https://github.com/ChameleonCloud/kolla-ansible.git

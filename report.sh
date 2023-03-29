@@ -13,8 +13,13 @@ repos_list=$(grep "path" .gitmodules | cut -d "=" -f 2)
 for repo in $repos_list
 do
     cd "${currdir}/${repo}"
-    echo $repo `git rev-list --count .."${OS_BRANCH}" 2>/dev/null ||:`
-    git log -q --pretty=oneline  .."${OS_BRANCH}" 2>/dev/null ||:
+
+    upstream_commit_count=$(git rev-list --count .."${OS_BRANCH}" 2>/dev/null ||:)
+    if [[ ${upstream_commit_count:-0} >0 ]]
+    then
+        echo "wrote ${upstream_commit_count:-0} commits to ../reports/${repo}.txt"
+        `git log -q --pretty=oneline  .."${OS_BRANCH}" > ../reports/${repo}.txt 2>/dev/null`
+    fi
     cd
 done
 

@@ -1,73 +1,13 @@
-[submodule "2023.1-chi/blazar"]
-	path = 2023.1-chi/blazar
-	url = https://github.com/ChameleonCloud/blazar.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/heat"]
-	path = 2023.1-chi/heat
-	url = https://github.com/ChameleonCloud/heat.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/horizon-theme"]
-	path = 2023.1-chi/horizon-theme
-	url = https://github.com/ChameleonCloud/horizon-theme.git
-	branch = master
-[submodule "2023.1-chi/horizon"]
-	path = 2023.1-chi/horizon
-	url = https://github.com/ChameleonCloud/horizon.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/blazar-dashboard"]
-	path = 2023.1-chi/blazar-dashboard
-	url = https://github.com/ChameleonCloud/blazar-dashboard.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/heat-dashboard"]
-	path = 2023.1-chi/heat-dashboard
-	url = https://github.com/ChameleonCloud/heat-dashboard.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/ironic"]
-	path = 2023.1-chi/ironic
-	url = https://github.com/ChameleonCloud/ironic.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/keystone"]
-	path = 2023.1-chi/keystone
-	url = https://github.com/ChameleonCloud/keystone.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/networking-generic-switch"]
-	path = 2023.1-chi/networking-generic-switch
-	url = https://github.com/ChameleonCloud/networking-generic-switch.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/nova"]
-	path = 2023.1-chi/nova
-	url = https://github.com/ChameleonCloud/nova.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/blazar-nova"]
-	path = 2023.1-chi/blazar-nova
-	url = https://github.com/ChameleonCloud/blazar-nova.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/doni"]
-	path = 2023.1-chi/doni
-	url = https://github.com/ChameleonCloud/doni.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/kolla"]
-	path = 2023.1-chi/kolla
-	url = https://github.com/ChameleonCloud/kolla.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/kolla-ansible"]
-	path = 2023.1-chi/kolla-ansible
-	url = https://github.com/ChameleonCloud/kolla-ansible.git
-	branch = chameleoncloud/2023.1
-[submodule "2023.1-chi/chi-in-a-box"]
-	path = 2023.1-chi/chi-in-a-box
-	url = https://github.com/chameleoncloud/chi-in-a-box
-	branch = stable/2023.1
 [submodule "ussuri-kvm/keystone-base"]
-	path = ussuri-kvm/keystone-base
+	path = forks/ussuri-kvm/keystone
 	url = https://github.com/chameleoncloud/keystone
 	branch = backport/ussuri
 [submodule "ussuri/kolla"]
-	path = ussuri-kvm/kolla
+	path = forks/ussuri-kvm/kolla
 	url = https://github.com/chameleoncloud/kolla
 	branch = backports/ussuri
 [submodule "ussuri/kolla-ansible"]
-	path = ussuri-kvm/kolla-ansible
+	path = forks/ussuri-kvm/kolla/-ansible
 	url = https://github.com/chameleoncloud/kolla-ansible
 	branch = backport/ussuri
 [submodule "ussuri/chi-in-a-box"]

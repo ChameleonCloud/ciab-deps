@@ -3,8 +3,7 @@ version: 2
 updates:
   - package-ecosystem: gitsubmodule
     directories:
-      - "/2023.1-chi"
-      - "/ussuri-kvm"
+      - "/"
     schedule:
       interval: "daily"
     groups:

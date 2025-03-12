@@ -5,3 +5,8 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      2023.1-chi:
+        patterns: ["2023.1/*"]
+      ussuri-kvm:
+        patterns: ["ussuri-kvm/*"]

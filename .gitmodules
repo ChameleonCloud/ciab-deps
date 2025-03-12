@@ -62,3 +62,15 @@
 	path = ussuri-kvm/keystone-base
 	url = https://github.com/chameleoncloud/keystone
 	branch = backport/ussuri
+[submodule "ussuri/kolla"]
+	path = ussuri-kvm/kolla
+	url = https://github.com/chameleoncloud/kolla
+	branch = backports/ussuri
+[submodule "ussuri/kolla-ansible"]
+	path = ussuri-kvm/kolla-ansible
+	url = https://github.com/chameleoncloud/kolla-ansible
+	branch = backport/ussuri
+[submodule "ussuri/chi-in-a-box"]
+	path = ussuri-kvm/chi-in-a-box
+	url = https://github.com/chameleoncloud/chi-in-a-box
+	branch = ciab_minimal/ussuri-kvm-ci

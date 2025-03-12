@@ -1,60 +1,64 @@
-[submodule "blazar"]
-	path = 2023.1/blazar-base
+[submodule "2023.1/blazar"]
+	path = 2023.1/blazar
 	url = https://github.com/ChameleonCloud/blazar.git
 	branch = chameleoncloud/2023.1
-[submodule "heat"]
-	path = 2023.1/heat-base
+[submodule "2023.1/heat"]
+	path = 2023.1/heat
 	url = https://github.com/ChameleonCloud/heat.git
 	branch = chameleoncloud/2023.1
-[submodule "horizon-theme"]
-	path = 2023.1/horizon-additions-theme-chameleoncloud
+[submodule "2023.1/horizon-theme"]
+	path = 2023.1/horizon-theme
 	url = https://github.com/ChameleonCloud/horizon-theme.git
 	branch = master
-[submodule "horizon"]
-	path = 2023.1/horizon-base
+[submodule "2023.1/horizon"]
+	path = 2023.1/horizon
 	url = https://github.com/ChameleonCloud/horizon.git
 	branch = chameleoncloud/2023.1
-[submodule "blazar-dashboard"]
-	path = 2023.1/horizon-plugin-blazar-dashboard
+[submodule "2023.1/blazar-dashboard"]
+	path = 2023.1/blazar-dashboard
 	url = https://github.com/ChameleonCloud/blazar-dashboard.git
 	branch = chameleoncloud/2023.1
-[submodule "heat-dashboard"]
-	path = 2023.1/horizon-plugin-heat-dashboard
+[submodule "2023.1/heat-dashboard"]
+	path = 2023.1/heat-dashboard
 	url = https://github.com/ChameleonCloud/heat-dashboard.git
 	branch = chameleoncloud/2023.1
-[submodule "ironic"]
-	path = 2023.1/ironic-base
+[submodule "2023.1/ironic"]
+	path = 2023.1/ironic
 	url = https://github.com/ChameleonCloud/ironic.git
 	branch = chameleoncloud/2023.1
-[submodule "keystone"]
-	path = 2023.1/keystone-base
+[submodule "2023.1/keystone"]
+	path = 2023.1/keystone
 	url = https://github.com/ChameleonCloud/keystone.git
 	branch = chameleoncloud/2023.1
-[submodule "networking-generic-switch"]
-	path = 2023.1/neutron-base-plugin-networking-generic-switch
+[submodule "2023.1/networking-generic-switch"]
+	path = 2023.1/networking-generic-switch
 	url = https://github.com/ChameleonCloud/networking-generic-switch.git
 	branch = chameleoncloud/2023.1
-[submodule "nova"]
-	path = 2023.1/nova-base
+[submodule "2023.1/nova"]
+	path = 2023.1/nova
 	url = https://github.com/ChameleonCloud/nova.git
 	branch = chameleoncloud/2023.1
-[submodule "blazar-nova"]
-	path = 2023.1/nova-base-plugin-blazar
+[submodule "2023.1/blazar-nova"]
+	path = 2023.1/blazar-nova
 	url = https://github.com/ChameleonCloud/blazar-nova.git
 	branch = chameleoncloud/2023.1
-[submodule "doni"]
-	path = 2023.1/doni-base
+[submodule "2023.1/doni"]
+	path = 2023.1/doni
 	url = https://github.com/ChameleonCloud/doni.git
 	branch = chameleoncloud/2023.1
-[submodule "kolla"]
+[submodule "2023.1/kolla"]
 	path = 2023.1/kolla
 	url = https://github.com/ChameleonCloud/kolla.git
 	branch = chameleoncloud/2023.1
-[submodule "kolla-ansible"]
+[submodule "2023.1/kolla-ansible"]
 	path = 2023.1/kolla-ansible
 	url = https://github.com/ChameleonCloud/kolla-ansible.git
 	branch = chameleoncloud/2023.1
-[submodule "chi-in-a-box"]
+[submodule "2023.1/chi-in-a-box"]
 	path = 2023.1/chi-in-a-box
 	url = https://github.com/chameleoncloud/chi-in-a-box
 	branch = stable/2023.1
+[submodule "ussuri-kvm/keystone-base"]
+	path = ussuri-kvm/keystone-base
+	url = https://github.com/chameleoncloud/keystone
+	branch = backport/ussuri

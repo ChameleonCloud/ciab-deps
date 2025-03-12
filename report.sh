@@ -1,31 +1,39 @@
 #!/bin/bash
 
-currdir=$(pwd)
 
-CHI_BRANCH="chameleoncloud/xena"
-OS_BRANCH="upstream/stable/xena"
-
-repos_list=$(grep "path" .gitmodules | cut -d "=" -f 2)
-
-# echo $repos_list
+# rm -rf repos
 
 
-for repo in $repos_list
-do
-    cd "${currdir}/${repo}"
+ensure_repo(){
+    local repo_ref=$1
+    local repo_url=$2
+    local repo_path=$3
 
-    upstream_commit_count=$(git rev-list --count .."${OS_BRANCH}" 2>/dev/null ||:)
-    if [[ ${upstream_commit_count:-0} >0 ]]
-    then
-        echo "wrote ${upstream_commit_count:-0} commits to ../reports/${repo}.txt"
-        `git log -q --pretty=oneline  .."${OS_BRANCH}" > ../reports/${repo}.txt 2>/dev/null`
+    if [[ ! -d $repo_path ]]; then    
+        git clone --single-branch --branch "$repo_ref" "$repo_url" "$repo_path"
     fi
-    cd
-done
+}
 
+check_upstream(){
 
-# cmd1='git rev-list --count ..upstream/stable/xena 2>/dev/null ||:'
-# cmd2='git rev-list --count upstream/stable/xena.. 2>/dev/null ||:'
+    local upstream_ref=$1
+    local upstream_url=$2
+    local repo_path=$3
+    local repo_name=$4
 
-# echo 'repo, behind, ahead'
-# git submodule foreach --quiet 'echo $sm_path, `git rev-list --count ..upstream/stable/xena 2>/dev/null ||: `, `git rev-list --count upstream/stable/xena.. 2>/dev/null ||: `'
+    pushd "$repo_path"
+    git remote add upstream $baserepo
+    git fetch "upstream" "$baseref"
+
+    git --no-pager log --pretty=oneline "${curref}..${baseref}" > "../../${repo_name}-upstream.txt"
+    git --no-pager log --pretty=oneline "${baseref}..${curref}" > "../../${repo_name}-local.txt"
+
+    popd
+}
+
+rm -rf repos
+mkdir -p repos
+while IFS=$'\t' read -r name currepo curref baserepo baseref; do
+    ensure_repo "$curref" "$currepo" "repos/$name"
+    check_upstream "$baseref" "$baserepo" "repos/$name" $name
+done < <(yq -r '.deps[] | [.name, .current.repo, .current.ref, .base.repo, .base.ref] | @tsv' deps.yml)

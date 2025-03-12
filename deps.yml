@@ -1,0 +1,24 @@
+---
+release: ussuri-kvm
+deps:
+  - name: keystone
+    current:
+      repo: https://github.com/chameleoncloud/keystone
+      ref: "backport/ussuri"
+    base:
+      repo: https://github.com/openstack/keystone
+      ref: "ussuri-eol"
+  - name: kolla
+    current:
+      repo: https://github.com/chameleoncloud/kolla
+      ref: "backports/ussuri"
+    base:
+      repo: https://github.com/openstack/kolla
+      ref: "ussuri-eol"
+  - name: kolla-ansible
+    current:
+      repo: https://github.com/chameleoncloud/kolla-ansible
+      ref: "backport/ussuri"
+    base:
+      repo: https://github.com/openstack/kolla-ansible
+      ref: "ussuri-eol"

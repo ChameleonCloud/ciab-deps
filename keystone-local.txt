@@ -1,0 +1,10 @@
+d641f5522f8bbae9623ae2a88b2cafefb66a8893 Add 'optional' mapping directive for remote maps
+44cc1d4eedec199154b23e3a78cf1511660ed255 Fix issue with NoneType direct maps
+9cafbcbc4d7e4dd09785ac411f8ee5df85faa092 Map keys on multi-valued direct-maps as list
+bf83a1c32acb577931b2a4a083241a98e097c3f5 Allow mapping extra project properties
+6b3cd1619911f4d10901a18986bb261cd8ca30c7 Support applying filters to assertion nested props
+56ac2721f1a24f7ae7e56eddb4d7cfa3cd8cc89e Support JSON-encoded assertion payloads
+be5140d84a040877b486777787e37e6f42859d06 Support for deprovisioning federated assignments
+adb5ea6c5fee75fcc795788d65292ef6871004be Support regexes in whitelists/blacklists
+32ce3da7800c116e11597eeebfb7e0550d6e4da3 Support third-party login discovery
+940b4f724192ebd9ed96b2f38d629274fb6e1722 Direct map auto-provision project names and roles

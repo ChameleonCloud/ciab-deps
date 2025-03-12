@@ -1,0 +1,2 @@
+39b74c2a2f4f9f3a20442f9da11d04dcae0df45e remove broken sensu key
+1a0cfc6428e7ddafcab2dd98540772dab87604cb Ensure set_configs sets execute bit on directories

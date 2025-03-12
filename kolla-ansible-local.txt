@@ -1,0 +1,9 @@
+dc281b010f1009819678984b26534488f49a3301 keystone: do not report changed on tasks that list
+4513a5658ba8a6a0c70288cee24889fa47db79fc [keystone]: allow use of OIDCProviderMetadataURL
+83a74f93bad450014957062e76ac3046c9720e83 Add OIDCDiscoverURL mod_oidc option
+c3aa0580f1e872530597aa152ef014354f404065 OpenID Connect certifiate file is optional
+f95128805d899c71c39bdae2ed728873d76ccd0c Add support to OpenID Connect Authentication flow
+f89a192006d6a6998a5ac71d4455970625ebdc5b horizon: Support custom themes
+3881c4a1447ba18f06b37f7c51daa884aee46728 handle ContainerConfig -> Config key change
+31cf62720f856684504d146371d4350f515770ba handle docker key deprecation
+2160a269e9c357a3d3004ce14ebc81d439599aa2 hack: allow 20.04

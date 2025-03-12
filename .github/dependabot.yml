@@ -2,11 +2,13 @@ version: 2
 
 updates:
   - package-ecosystem: gitsubmodule
-    directory: "/"
+    directories:
+      - "/2023.1-chi"
+      - "/ussuri-kvm"
     schedule:
       interval: "daily"
     groups:
       2023.1-chi:
-        patterns: ["2023.1/*"]
+        patterns: ["2023.1-chi*"]
       ussuri-kvm:
-        patterns: ["ussuri-kvm/*"]
+        patterns: ["ussuri-kvm*"]

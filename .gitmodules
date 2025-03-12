@@ -61,3 +61,6 @@
 [submodule "kolla-ansible"]
 	path = kolla-ansible
 	url = https://github.com/ChameleonCloud/kolla-ansible.git
+[submodule "chi-in-a-box"]
+	path = chi-in-a-box
+	url = https://github.com/chameleoncloud/chi-in-a-box
